@@ -1,0 +1,17 @@
+<h1>QR Code Security Warning</h1>
+    <p>
+      Scanning QR codes can be dangerous! They may lead to malicious websites or unauthorized access to your personal information.
+    </p>
+    <p>
+      Protect yourself and stay safe by following these tips:
+    </p>
+    <ul>
+      <li>Only scan QR codes from trusted sources</li>
+      <li>Verify the destination URL before scanning</li>
+      <li>Keep your smartphone's software up to date</li>
+      <li>Use a QR code scanner with built-in security features</li>
+    </ul>
+    <p>
+        Despite the risks, you can safely download my CV by clicking the button below:    </p>
+    <a class="download-button" href="link-to-your-cv.pdf" download>Download CV</a>
+  </div>
