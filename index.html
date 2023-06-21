@@ -2,10 +2,11 @@
 <html>
 <head>
   <title>QR Code Security Warning</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     /* CSS Styles */
     @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-    @import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0');
+    @import url('https://fonts.googleapis.com/css2?family=Material+Icons+Outlined&display=swap');
 
     body {
       font-family: 'Roboto', Arial, sans-serif;
@@ -15,31 +16,33 @@
       background-color: #ff0000;
       color: #ffffff;
     }
+
     .warning-container {
       padding: 40px;
     }
-    .warning-icon {
-      width: 120px;
-      height: 120px;
-      margin-bottom: 20px;
-    }
-    .material-symbols-outlined {
-      font-family: 'Material Symbols Outlined', Arial, sans-serif;
+
+    .material-icons-outlined {
+      font-family: 'Material Icons Outlined', Arial, sans-serif;
       font-size: 3em;
       line-height: 1;
       fill: #ffffff;
       stroke: none;
     }
+
     h1 {
       font-size: 24px;
       margin-bottom: 20px;
     }
+
     p {
       line-height: 1.6;
+      margin-bottom: 20px;
     }
-    li{
+
+    li {
       font-style: italic;
     }
+
     .download-button {
       display: inline-block;
       padding: 10px 20px;
@@ -58,9 +61,9 @@
     .download-button:hover {
       background-color: #ff0000;
       color: #ffffff;
-      
       border: 1px solid #ffffff;
     }
+
     .centered-list {
       display: flex;
       flex-direction: column;
@@ -68,22 +71,26 @@
       text-align: left;
       margin-top: 40px;
     }
+
     .centered-list li {
-      list-style-type: circle;
+      margin-bottom: 10px;
+      list-style-type: none;
       display: flex;
       align-items: center;
     }
+
     .centered-list li:before {
       content: "•";
       margin-right: 10px;
       font-size: 24px;
     }
-    .centered-list p{
+
+    .centered-list p {
       text-decoration: underline;
     }
 
-        /* Media Queries */
-        @media (max-width: 768px) {
+    /* Media Queries */
+    @media only screen and (max-width: 480px) {
       .warning-container {
         padding: 20px;
       }
@@ -117,15 +124,15 @@
 
       .centered-list p {
         font-size: 16px;
+        margin-bottom: 10px;
       }
     }
-
   </style>
 </head>
 <body>
   <div class="warning-container">
-    <span class="material-symbols-outlined">
-        warning
+    <span class="material-icons-outlined">
+      warning
     </span>
     <h1>QR Code Security Warning</h1>
     <p>
@@ -134,19 +141,17 @@
     <p>
       However, you can still download my CV securely by clicking the button below:
     </p>
-    <a class="download-button" href="TALEB Nasser - CV.pdf" download>Download CV</a>
-    <div class="centered-list">
+    <a class="download-button" href="CV.pdf" download>Download CV</a>
+
+    <ul class="centered-list">
       <p>
         Protect yourself and stay safe by following these tips:
       </p>
-      <ul>
-        <li>Only scan QR codes from trusted sources</li>
-        <li>Verify the destination URL before scanning</li>
-        <li>Keep your smartphone's software up to date</li>
-        <li>Use a QR code scanner with built-in security features</li>
-      </ul>  
-    </div>
-    
+      <li>Only scan QR codes from trusted sources</li>
+      <li>Verify the destination URL before scanning</li>
+      <li>Keep your smartphone's software up to date</li>
+      <li>Use a QR code scanner with built-in security features</li>
+    </ul>
   </div>
 </body>
 </html>
